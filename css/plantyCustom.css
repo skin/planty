@@ -1,0 +1,163 @@
+body{
+    background: #10B6B6;
+}
+
+
+/**********Intro Page **************/
+
+.introBg{
+    background-color: #0AC6BF;
+}
+.orbit-container{
+    margin-top: 10%;
+}
+.orbit-container .orbit-slide-number, .orbit-container .orbit-next > span, .orbit-container .orbit-prev > span{
+    display: none;
+}
+.orbit-bullets li{
+    height:1.5rem;
+    width:1.5rem;
+    margin-right: 3%;
+}
+
+/**********Login Page **************/
+
+.logoPlanty{
+    padding: 15%;
+    margin-top: 10%;
+}
+
+.button{
+    border-radius: 4px;
+    background-color: #10B6B6;
+}
+.buttonFb{
+    background-image: url(/img/FB-f-Logo__blue_144.png);
+    background-repeat: no-repeat;
+    background-position: -4% center;
+    background-size: 24%;
+    background-color: #3B579D;
+}
+.fb > .button{
+    padding-left:17%;
+    font-size: 0.92em;
+}
+
+.fb> .button:hover, .button:focus {
+    background-color: #2A4280; 
+}
+button:hover, button:focus, .button:hover, .button:focus {
+    background-color: #673B89; 
+}
+
+.centerAlign{
+    text-align: center;
+}
+a{
+    color:#673B89;
+}
+a:hover, a:focus {
+    color: #10B6B6; 
+}
+
+.logInLink{
+    font-weight: 700;
+}
+.back2Intro{
+    margin-top: 30%;
+}
+
+
+/**********Header **************/
+
+.row > .headerFix{
+    padding: 0;
+    margin: 0;
+}
+.top-bar,  .top-bar.expanded .title-area{
+    box-shadow: -webkit-box-shadow: 0px 5px 18px -4px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 18px -4px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+}
+
+.top-bar,  .top-bar.expanded .title-area, .top-bar-section ul li{
+    background-color: #DEE2E3;
+}
+
+.logoText{
+    width:20%;
+    margin: 3% 0 0 3%;
+}
+.top-bar .toggle-topbar.menu-icon a{
+    color:#374C5B;
+    text-transform:none;
+    font-weight: 200;
+    font-size: 1em;
+}
+.tab-bar .menu-icon {
+    color:#374C5B;
+}
+.top-bar-section .divider, .top-bar-section [role="separator"]{
+    border-color: #AFB9BB;
+}
+.top-bar-section ul li > a{
+    color:#374C5B;
+}
+.top-bar .toggle-topbar.menu-icon a span::after,  .top-bar.expanded .toggle-topbar a span::after {
+     box-shadow: 0 0 0 1px #374C5B, 0 7px 0 1px #374C5B, 0 14px 0 1px #374C5B;
+}
+
+.upcoming-birthdays{
+    font-size: 1.4em;
+    font-weight: 700;
+    color:#374C5B;
+    margin-bottom: 7%;
+    margin-top: 1%;
+}
+.marginLR{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.card{
+    background: #f2f2f2;
+    border: 1px solid #DEE2E3;
+    border-radius: 2px;
+    width: 96%;
+    padding: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 3%;
+
+}
+.profile-picture{
+    width: 22%;
+    margin-right: 4%;
+    margin-bottom: 4%;
+}
+.friendPic{
+    width: 100%;
+    border-radius: 40px;
+    border: 1px solid #DEE2E3;
+}
+.floater{
+    float: left;
+}
+.name{
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+.birthday{
+    font-size:1.3em;
+    font-weight: 200;
+}
+.clearFix{
+   clear:both; 
+}
+.bdayInfo{
+    width:57%;
+}
+.arrow{
+    width:10%;
+    padding-top: 6%;
+    margin-left: 6%;
+}
