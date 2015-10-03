@@ -3,9 +3,9 @@
 As you might know, we breathe, per year, oxygen that is extracted from 7/8 trees.
 Unfortunately we are all always too busy to care about these facts.
 
-But there's something we could easily do, use Planty and gift a plant to someone, maybe for a its birthday or for any special occasions.
-It doesn't require so much time and it lets you take a small meaningful step towards the social cause.
+But there's something we could easily do, use Planty App and gift a plant to someone, maybe on a birthday or for any other special occasions. It's very handy way  and it lets you take a small meaningful step towards the social cause.
 
-When you plant trees, you are directly cleaning the air. A three can releases enough oxygen to supply an human being needs for two years.
-This awesome gesture of gifting, let you grow your own virtual forest, collect points and redeem them as voucher for other purchases.
+Bringing oxygen producing plants into your home or office is a way to mimic the healthy lifestyle. Planty let you do exactly the same thing. You buy and gift it for loved ones to make them feel special in a very unqiue way. You indirectly involve them in the good cause. You make them feel responsible towards that special plant and in a way towards enviornment.
+Planty not only let you buy the plants, but let you grow your very own virtual forest. How awesome is that? :-) So in a way you are gifting the trees to your friends, mates, family yet everytime you are adding one tree into your forest.
+Additionally, every plant gifting let you collect points which you redeem in your future purchases.
 
