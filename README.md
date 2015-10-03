@@ -9,3 +9,4 @@ Bringing oxygen producing plants into your home or office is a way to mimic the 
 Planty not only let you buy the plants, but let you grow your very own virtual forest. How awesome is that? :-) So in a way you are gifting the trees to your friends, mates, family yet everytime you are adding one tree into your forest.
 Additionally, every plant gifting let you collect points which you redeem in your future purchases.
 
+P.S. : At this moment the app can be viewed properly on iOS and Android MOBILE/SMARTPHONE devices.
