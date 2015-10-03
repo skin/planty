@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="css/plantyCustom.css" />
 <link rel="manifest" href="manifest.json">
 <script src="js/vendor/modernizr.js"></script>
+<script src="js/planty.js"></script>
 <link rel="stylesheet" href="css/plantyCustom.css" />
 </head>
 <body>
@@ -57,3 +58,6 @@
 				</nav>
 			</div>
 		</div>
+        <div style="margin-top:15%;">
+        
+    

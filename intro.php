@@ -20,7 +20,18 @@ include 'inc/switch-header.php';
 			</div>
 		</div>
 	</div>
+	<div class="row">
+		<div class="large-12 large-centered columns centerAlign">
+		<a href="index.php?skip=true">Skip Intro</a>
+	</div>
+	<script>
 
+	$(document).foundation({
+	  orbit: {
+	      circular: false
+	  }
+	});
+</script>
 <?
 include 'inc/switch-footer.php';
 ?>

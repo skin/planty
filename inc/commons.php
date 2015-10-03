@@ -10,9 +10,17 @@ function checkUserLoggedIn(){
 }
 
 function checkIntro(){
+	if (isSkipForced()){
+		setIntroShown();
+	}
 	if (!wasIntroShown()){
 	  header ("Location: intro.php");
 	}
+}
+
+function isSkipForced(){
+	 $skip = $_GET["skip"];
+	 return !empty($skip);
 }
 
 function isLogged(){
@@ -199,17 +207,32 @@ function getFormattedDate($date){
 	return date("d-m-Y", strtotime($date));
 }
 
-function getGifts(){
-	$sql = "select userID,plantID,friendID,giftDate,f.name as friendName,p.name as plantName, p.points as points FROM gifts as g,friends as f,plants as p WHERE g.friendID=f.id AND p.id=g.plantID";
+function getGifts($user){
+	$sql = "select userID,plantID,friendID,giftDate,f.name as friendName,p.name as plantName, p.points as points FROM gifts as g,friends as f,plants as p WHERE g.friendID=f.id AND p.id=g.plantID AND g.userID=:userID";
 	try {
 		$dbCon = getConnection();
 		$stmt = $dbCon->prepare($sql);
+		$stmt->bindParam("userID", $user->userID);
 		$stmt->execute();
 		$gifts = $stmt->fetchAll(PDO::FETCH_OBJ);
 	} catch(PDOException $e) {
 		echo '{"error":{"text":'. $e->getMessage() .'}}';
 	}
 	return $gifts;
+}
+
+function getCountFriendsGifted($user){
+	$sql = "select distinct g.friendID FROM gifts as g,friends as f WHERE g.friendID=f.id AND g.userID=:userID";
+	try {
+		$dbCon = getConnection();
+		$stmt = $dbCon->prepare($sql);
+		$stmt->bindParam("userID", $user->userID);
+		$stmt->execute();
+		$friendsGifted = $stmt->fetchAll(PDO::FETCH_OBJ);
+	} catch(PDOException $e) {
+		echo '{"error":{"text":'. $e->getMessage() .'}}';
+	}
+	return sizeof($friendsGifted);
 }
 
 ?>

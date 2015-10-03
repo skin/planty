@@ -1,6 +1,7 @@
 <?
 	session_start();
 	require 'inc/includes.php';
+		checkIntro();
 	setIntroShown();
 	$user = getFBUser();
 	if ($user) {
@@ -17,7 +18,9 @@
 	    $user = null;
 	  }
 	}
+
 	include 'inc/switch-header.php';
+		echo  isSkipForced();
 ?>
 
 <body style="background:#ffffff !important;">

@@ -6,31 +6,28 @@ $user = getUser(getSessionUser());
 include 'inc/header.php';
 ?>
 <div class="row">
-  <div class="large-2 small-0 columns">&nbsp;</div>
-  <div class="large-8 small-12 columns">
+<div class="card">
+  <br/>
     <center>
       <!--<img src="<?=getFBProfilePictureURL()?>"/>-->
-    <h5>
-      <img src="img/coins.png" width="150"/>
+    <h5><img src="img/coins.png" width="150"/>
       <br/>
         <br/>
       Your earned <strong><?=$user->points?></strong> points so far.
       <? if ($user->points>0){
         ?>
         <br/>
-        Reedem them now making another gift to your friends!
+        Reedem them now by sending another gift to your friends!
         <br/>
         <br/>
-        <a href="choose.php"><button>Gift a friend now</button></a>
+        <a href="choose.php" class="button expand">Gift a friend now</a>
         <?
       }
       ?>
     </h5>
   </center>
-  </div>
-  <div class="large-2 small-0 columns">&nbsp;</div>
 </div>
-
+  </div>
 
 <?
 include 'inc/footer.php';

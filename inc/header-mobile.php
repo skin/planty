@@ -11,12 +11,13 @@ session_start();
 <title>Planty</title>
 <meta name="viewport" content="width=device-width">
 <meta name="mobile-web-app-capable" content="yes">
-<link rel="apple-touch-icon" href="img/logo_icon.png"/>
-<link rel="apple-touch-icon-precomposed" href="img/logo_icon.png"/>
-<link rel="icon" sizes="192x192" href="img/logo_icon.png">
-<link rel="icon" sizes="128x128" href="img/logo_icon.png">
+<link rel="apple-touch-icon" href="img/icon_192.png"/>
+<link rel="apple-touch-icon-precomposed" href="img/icon_192.png"/>
+<link rel="icon" sizes="192x192" href="img/icon_192.png">
+<link rel="icon" sizes="128x128" href="img/icon_192.png">
 <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 <link rel="stylesheet" href="css/foundation.css" />
 <link rel="manifest" href="manifest.json">
 <script src="js/vendor/modernizr.js"></script>
+<script src="js/planty.js"></script>
 <link rel="stylesheet" href="css/plantyCustom.css" />

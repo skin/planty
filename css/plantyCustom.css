@@ -2,6 +2,10 @@ body{
     background: #10B6B6;
 }
 
+.headerFix{
+    position: fixed;
+    z-index: 10000;
+}
 
 /**********Intro Page **************/
 
@@ -107,9 +111,9 @@ a:hover, a:focus {
      box-shadow: 0 0 0 1px #374C5B, 0 7px 0 1px #374C5B, 0 14px 0 1px #374C5B;
 }
 
-.upcoming-birthdays{
-    font-size: 1.4em;
-    font-weight: 700;
+.titleOnCard{
+    font-size: 1.3em;
+    font-weight: 300;
     color:#374C5B;
     margin-bottom: 7%;
     margin-top: 1%;
@@ -119,7 +123,7 @@ a:hover, a:focus {
     margin-right: 2%;
 }
 .card{
-    background: #f2f2f2;
+    background: #ffffff;
     border: 1px solid #DEE2E3;
     border-radius: 2px;
     width: 96%;
@@ -136,18 +140,18 @@ a:hover, a:focus {
 }
 .friendPic{
     width: 100%;
-    border-radius: 40px;
+    border-radius: 100px;
     border: 1px solid #DEE2E3;
 }
 .floater{
     float: left;
 }
 .name{
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bolder;
 }
-.birthday{
-    font-size:1.3em;
+.birthday,.subheader {
+    font-size:1.2em;
     font-weight: 200;
 }
 .clearFix{
@@ -157,7 +161,36 @@ a:hover, a:focus {
     width:57%;
 }
 .arrow{
-    width:10%;
+    width:9%;
     padding-top: 6%;
     margin-left: 6%;
+}
+.footerText{
+    font-size: 0.8em;
+    color:#ffffff;
+}
+.panel{
+    background: transparent;
+    border:0;
+    border-bottom: 1px solid #DEE2E3;
+    padding:0;
+}
+hr{
+    margin: 1.04rem 0 1.1rem;
+}
+.subheader{
+    font-size:2em;
+    font-weight: 200;
+}
+
+.pricing-table .title{
+    background: #374C5B;
+    font-size: 1.1em;
+    font-weight: bolder;
+    color:#ffffff;
+}
+.successIcon{
+    margin-bottom: 5%;
+    width: 37%;
+}
 }

@@ -40,7 +40,7 @@ and (max-device-width : 500px)
   .empty-forest {
     width: 90%;
     position: relative;
-    top: -50px;
+    top: -36px;
     left: -5px;
   }
 }
@@ -64,50 +64,37 @@ and (max-device-width : 700px)
 </style>
 
 <div class="row">
-<div class="large-4 small-3 columns">&nbsp;</div>
-<div class="large-4 small-6 columns">
-  <center>
-  <div class="board-text" style="color:#984900;position:relative;top:4em;left:0em;">
-    <strong><?=$user->name?> <br/>  Forest</strong>
-  </div>
-  <img class="board" src="img/board.png"/>
-  </center>
-</div>
-<div class="large-4 small-3 columns">&nbsp;</div>
-</div>
-<div class="row">
-<div class="large-2 small-0 columns">&nbsp;</div>
-<div class="large-8 small-12 columns">
-  <center>
-    <img class="empty-forest" src="img/empty_forest.png"/>
-  </center>
-  <?
-  	$gifts = getGifts();
-    while($gift = array_shift($gifts)){
-  	?>
+<div class="card">
 
-      <img data-tooltip aria-haspopup="true"  title="Gift for <?=$gift->friendName;?>, <br/> given on <?=getFormattedDate($gift->giftDate)?> (<?=$gift->plantName?>, <?=$gift->points?> Points)" class="tree has-tip radius" src="img/tree.png" width="50px" style="display:none;">
-  	<?
-  	}
-  ?>
+<div class="titleOnCard" style="text-align:center;"><?=$user->name?>'s Forest</div>
+  <br>
+    <center>
+      <img class="empty-forest" src="img/empty_forest.png"/>
+    </center>
+    <?
+    	$gifts = getGifts($user);
+      while($gift = array_shift($gifts)){
+    	?>
+        <img data-tooltip aria-haspopup="true"  title="Gift for <?=$gift->friendName;?>, <br/> given on <?=getFormattedDate($gift->giftDate)?> (<?=$gift->plantName?>, <?=$gift->points?> Points)" class="tree has-tip radius" src="img/tree.png" width="50px" style="display:none;">
+    	<?
+    	}
+    ?>
+    <div class="name floater">Plants gifted</div><div class="name" style="float:right"><?=sizeof(getGifts($user))?></div>
+    <div style="clear:both;"></div>
+    <div class="name floater">Number of friends</div><div class="name" style="float:right"><?=getCountFriendsGifted($user)?></div>
+    <div style="clear:both;"></div>
+    <div class="centerAlign" style="padding:4%;">
+         <a href="choose.php">Gift more!</a>
+   </div>
+
 </div>
-<div class="large-2 small-0 columns">&nbsp;</div>
 </div>
-	<script src="js/vendor/jquery.js"></script>
+
+<script src="js/vendor/jquery.js"></script>
 <script>
-function getRandomNumber(start,end) {
-    return Math.floor(Math.random() * end) + start
-}
-
 $('document').ready(
   function(){
-    $(".tree").each(function(index) {
-      $(this).show();
-      $(this).css("position","absolute");
-      $(this).css("top",getRandomNumber(10,50)+"%");
-      $(this).css("left",getRandomNumber(30,40)+"%");
-      console.log( index + ": " + $(this).text() );
-    });
+    displayTrees();
   }
 );
 </script>

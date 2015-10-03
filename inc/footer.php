@@ -1,9 +1,10 @@
+</div>
 <footer class="row">
 	<div class="large-12 columns">
 		<hr>
 		<div class="row">
 			<div class="large-6 columns">
-				<p><small>Planty © 2015  Lovingly made at HackZurich 2015.</small></p>
+				<p class="footerText">Planty © 2015  Lovingly made at HackZurich 2015.</p>
 			</div>
 			<div class="large-6 columns">
 

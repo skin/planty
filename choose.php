@@ -9,37 +9,47 @@ $friend = getFriend($_GET["friendID"]);
 
 ?>
 
-  <div class="title choose">
-      Choose a plant for <?=$friend->name;?>
+<div class="row">
+<div class="card">
+
+  <div class="titleOnCard">
+      Choose a plant for <?if(!empty($friend)){echo $friend->name;}else{echo "a friend";}?>
   </div>
+
+  <div><img src="/img/filter.png"/></div>
 <div class="row">
   <div class="large-12 columns">
   <?
     $plants = getPlants();
     while($plant = array_shift($plants)){
 	?>
-      <div class="large-6 small-12 columns">
+
         <div class="panel">
           <div class="row">
-            <div class="large-4 small-6 columns">
+
+            <div class="large-1 small-12 columns centerAlign">
               <img src="<?=getPlantImage($plant->id)?>"/>
-              <div class="buy">
-                <a href="buy.php?friendID=<?=$friend->id;?>&plantID=<?=$plant->id;?>"><button>Gift it!</button></a>
-              </div>
             </div>
-          <div class="large-8 small-6 columns">
-          <strong><?=$plant->name?></strong>
-          <hr><?=$plant->description?>
+          <div class="large-11 small-0 columns">
+          <div class="name"><?=$plant->name?></div>
+          <p align="justify"><?=$plant->description?></p>
           <h6 class="subheader"><?=$plant->price?> CHF</h6>
+          <div>
+          <a class="button expand" href="buy.php?friendID=<?=$friend->id;?>&plantID=<?=$plant->id;?>">Gift it!</a>
+          </div>
         </div>
+
       </div>
     </div>
-  </div>
+
 
   	<?
   	}
   ?>
   </div>
+</div>
+
+</div>
 </div>
 <?
 include 'inc/footer.php';
