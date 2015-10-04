@@ -1,6 +1,6 @@
 # planty
 
-As you might know, we breathe, per year, oxygen that is extracted from 7/8 trees.
+As you might know, we breathe, per year, oxygen that is equivalent to the one that is extracted from 7/8 trees.
 Unfortunately we are all always too busy to care about these facts.
 
 But there's something we could easily do, use Planty App and gift a plant to someone, maybe on a birthday or for any other special occasions. It's very handy way  and it lets you take a small meaningful step towards the social cause.
