@@ -75,7 +75,7 @@ and (max-device-width : 700px)
     	$gifts = getGifts($user);
       while($gift = array_shift($gifts)){
     	?>
-        <img data-tooltip aria-haspopup="true"  title="Gift for <?=$gift->friendName;?>, <br/> given on <?=getFormattedDate($gift->giftDate)?> (<?=$gift->plantName?>, <?=$gift->points?> Points)" class="tree has-tip radius" src="img/tree.png" width="50px" style="display:none;">
+        <img data-tooltip aria-haspopup="true"  title="Gift for <strong><?=$gift->friendName;?></strong> <br/> given on <?=getFormattedDate($gift->giftDate)?><br> (<?=$gift->plantName?>, <?=$gift->points?> Points)" class="tree has-tip radius" src="img/tree.png" width="50px" style="display:none;">
     	<?
     	}
     ?>

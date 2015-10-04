@@ -193,4 +193,10 @@ hr{
     margin-bottom: 5%;
     width: 37%;
 }
+.tooltip{
+    background: #374C5B;
+    width:92% !important;
+}
+.tooltip.radius{
+    border-radius: 7px;
 }
